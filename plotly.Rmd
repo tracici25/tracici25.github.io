@@ -37,22 +37,22 @@ rest_inspec =
 # Scatterplot
 ```{r}
 rest_inspec %>% 
+  mutate(cuisine_description = fct_reorder(cuisine_description, score)) %>% 
   mutate(text_label = str_c("Restaurant Name: ", dba, "\nGrade: ", grade, "\nViolation: ", violation_description)) %>% 
   plot_ly(
     x = ~cuisine_description, y = ~score, text = ~text_label, color = ~cuisine_description, colors = "viridis",
     alpha = 0.5, type = "scatter", mode = "markers"
   ) %>% 
   layout(
-    title = "Scatterplot of different cuisine types' score",
+    title = "Scatterplot of scores of different cuisine types in Queens(zipcode 11101)",
     xaxis = list(title = "Cuisine Type"),
     yaxis = list(title = "Score"))
 ```
 
-## Barplot
+# Barplot
 ```{r}
 rest_inspec %>% 
   count(cuisine_description) %>% 
-  filter(n > 15) %>% 
   mutate(cuisine_description = fct_reorder(cuisine_description, n)) %>% 
   plot_ly(
     x = ~cuisine_description, y = ~n, 
@@ -66,6 +66,21 @@ rest_inspec %>%
   )
 ```
 
+# Boxplot
+
+```{r}
+rest_inspec %>% 
+  mutate(cuisine_description = fct_reorder(cuisine_description, score)) %>% 
+  plot_ly(
+    y = ~score, x = ~cuisine_description, color = ~cuisine_description,
+    colors = "viridis", type = "box"
+  ) %>% 
+  layout(
+    title = "Boxplot of scores of different cuisine types in Queens(zipcode 11101)",
+    xaxis = list(title = "Cuisine Type"),
+    yaxis = list(title = "Count")
+  )
+```
 
 
 
