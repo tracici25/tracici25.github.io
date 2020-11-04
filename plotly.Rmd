@@ -7,15 +7,16 @@ output:
     toc_float: true
 ---
 
-# Making plots on Restaurant Inspection dataset!
+# Use Plotly to make plots!
+Three plots are made on this web page. The dataset used is the Restaurant Inspection dataset. 
+
+# Load data
 
 ```{r}
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
 ```
-
-# Load data
 
 ```{r}
 data("rest_inspec")
