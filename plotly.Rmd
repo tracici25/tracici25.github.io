@@ -34,6 +34,20 @@ rest_inspec =
 
 # Make some plots
 
+# Scatterplot
+```{r}
+rest_inspec %>% 
+  mutate(text_label = str_c("Restaurant Name: ", dba, "\nGrade: ", grade, "\nViolation: ", violation_description)) %>% 
+  plot_ly(
+    x = ~cuisine_description, y = ~score, text = ~text_label, color = ~cuisine_description, colors = "viridis",
+    alpha = 0.5, type = "scatter", mode = "markers"
+  ) %>% 
+  layout(
+    title = "Scatterplot of different cuisine types' score",
+    xaxis = list(title = "Cuisine Type"),
+    yaxis = list(title = "Score"))
+```
+
 ## Barplot
 ```{r}
 rest_inspec %>% 
@@ -51,6 +65,9 @@ rest_inspec %>%
     yaxis = list(title = "Count")
   )
 ```
+
+
+
 
 
 
