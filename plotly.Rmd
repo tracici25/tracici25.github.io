@@ -2,17 +2,20 @@
 title: "Plotly"
 output: 
   html_document:
+    code_folding: hide
     toc: true
     toc_float: true
 ---
 
-# Plots of Instacart dataset
+# Making plots on Restaurant Inspection dataset!
 
 ```{r}
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
 ```
+
+# Load data
 
 ```{r}
 data("rest_inspec")
@@ -32,9 +35,8 @@ rest_inspec =
   )
 ```
 
-# Make some plots
-
 # Scatterplot
+
 ```{r}
 rest_inspec %>% 
   mutate(cuisine_description = fct_reorder(cuisine_description, score)) %>% 
@@ -50,6 +52,7 @@ rest_inspec %>%
 ```
 
 # Barplot
+
 ```{r}
 rest_inspec %>% 
   count(cuisine_description) %>% 

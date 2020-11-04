@@ -33,7 +33,7 @@ rest_inspec =
   )
 ```
 
-Column {data-width=600}
+Column {data-width=500}
 -----------------------------------------------------------------------
 
 ### Chart A
@@ -52,7 +52,7 @@ rest_inspec %>%
     yaxis = list(title = "Score"))
 ```
 
-Column {data-width=400}
+Column {data-width=500}
 -----------------------------------------------------------------------
 
 ### Chart B
