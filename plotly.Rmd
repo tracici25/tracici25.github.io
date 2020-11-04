@@ -6,4 +6,52 @@ output:
     toc_float: true
 ---
 
-# dataset
+# Plots of Instacart dataset
+
+```{r}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+```{r}
+data("rest_inspec")
+
+rest_inspec = 
+  rest_inspec %>% 
+  select(grade, boro, cuisine_description, dba, zipcode, inspection_type, score, violation_code, violation_description, grade) %>% 
+  mutate(
+    cuisine_description = replace(cuisine_description, cuisine_description == 'Latin (Cuban, Dominican, Puerto Rican, South & Central American)', 'Latin'),
+    cuisine_description = replace(cuisine_description, cuisine_description == 'CafÃ©/Coffee/Tea', 'Cafe'),
+    cuisine_description = replace(cuisine_description, cuisine_description == 'Delicatessen', 'Deli')
+    ) %>% 
+  filter(
+    boro == "QUEENS",
+    zipcode == "11101",
+    grade == c("A", "B", "C")
+  )
+```
+
+# Make some plots
+
+## Barplot
+```{r}
+rest_inspec %>% 
+  count(cuisine_description) %>% 
+  filter(n > 15) %>% 
+  mutate(cuisine_description = fct_reorder(cuisine_description, n)) %>% 
+  plot_ly(
+    x = ~cuisine_description, y = ~n, 
+    color = ~cuisine_description, colors = "viridis",
+    type = "bar"
+  ) %>% 
+  layout(
+    title = "Barchart of different cuisine types in Queens(zipcode 11101)",
+    xaxis = list(title = "Cuisine Type"),
+    yaxis = list(title = "Count")
+  )
+```
+
+
+
+
