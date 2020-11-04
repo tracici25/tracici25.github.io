@@ -7,10 +7,23 @@ output:
 ---
 
 # Intro
-Hi Everyone! This is Mufeng(Tracy) Xu, and I am creating my first website for p8105. Hope you like my website!!!
+Hi Everyone! This is Mufeng(Tracy) Xu, and I am creating my first website for p8105. Hope you like my website!!! Please [email me](mailto:<mx2241@cumc.columbia.com>) if you have any suggestions!
 
-# About Me
-Want to find out who I am and my past experience?
 
-[See My Resume](resume.html)
+# About the Website
+This website is a homework project for Data Science [P8105](https://p8105.com). The description of the project can be found [here](https://p8105.com/homework_4.html).
+
+
+# About My Life
+Scroll down if you want to know a bit more about me.
+
+## My cutie 
+Fuji is the cutest cat in the world!!!
+
+<img src="images/babyFuji.jpg" style="width:60%">
+<img src="images/Fuji.jpg" style="width:60%">
+
+
+# More About Me
+See [My Resume](resume.html) or click on the Resume button on the top.
 
