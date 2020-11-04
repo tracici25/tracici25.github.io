@@ -1,17 +1,18 @@
 ---
-title: "Plotly"
+title: "Dashboard"
 output: 
-  html_document:
-    toc: true
-    toc_float: true
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed
 ---
 
-# Plots of Instacart dataset
-
-```{r}
+```{r setup, include=FALSE}
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
+
+library(flexdashboard)
 ```
 
 ```{r}
@@ -32,9 +33,11 @@ rest_inspec =
   )
 ```
 
-# Make some plots
+Column {data-width=600}
+-----------------------------------------------------------------------
 
-# Scatterplot
+### Chart A
+
 ```{r}
 rest_inspec %>% 
   mutate(cuisine_description = fct_reorder(cuisine_description, score)) %>% 
@@ -49,7 +52,11 @@ rest_inspec %>%
     yaxis = list(title = "Score"))
 ```
 
-# Barplot
+Column {data-width=400}
+-----------------------------------------------------------------------
+
+### Chart B
+
 ```{r}
 rest_inspec %>% 
   count(cuisine_description) %>% 
@@ -66,7 +73,7 @@ rest_inspec %>%
   )
 ```
 
-# Boxplot
+### Chart C
 
 ```{r}
 rest_inspec %>% 
@@ -81,9 +88,4 @@ rest_inspec %>%
     yaxis = list(title = "Count")
   )
 ```
-
-
-
-
-
 
