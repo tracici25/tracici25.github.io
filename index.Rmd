@@ -1,8 +1,16 @@
 ---
-title: "Mufeng's First Website"
+title: "Mufeng's Website"
 output: 
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
 ---
+
+# Intro
+Hi Everyone! This is Mufeng(Tracy) Xu, and I am creating my first website for p8105. Hope you like my website!!!
+
+# About Me
+Want to find out who I am and my past experience?
+
+[See My Resume](resume.html)
+
