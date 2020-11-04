@@ -1,0 +1,108 @@
+---
+title: "My Resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: flatly
+---
+
+# Personal Information
+
+Mufeng Xu
+
+email: mx2241@cumc.columbia.edu
+
+# Education
+Columbia Mailman School of Public Health (2020.08 - present)
+
+Rensselaer Polytechnic Institute (2016.08 - 2020. 05)
+
+The Steward School (2013.08 - 2016.06)
+
+# Publications
+Coauthor of submitted journal “Cardiac CT blooming artifacts: clinical significance, root causes and potential solutions” of JCCT
+
+# Projects
+Capstone Project - Abdominal Surgical Retractor (2018.09 - 2019.05)
+
+* Designed and prototyped a surgical retractor system with extendable blades and adjustable frame.
+
+* Responsible for brainstorming, CAD modeling, feasibility testing, and assembling.
+
+* Awarded with “Capstone Best Pitch.”
+
+
+Biomechanics Simulation (2018.04 - 2018.05)
+
+* Simulated bone reaction under stress, bending, etc. using Solidworks.
+
+
+
+STEM Toy “Engingearing” (2017.02 - 2017.05)
+
+* Designed a STEM toy for kids to relate gear ratio theory with mathematical multiplications & divisions.
+
+* Responsible for brainstorming, CAD modeling, assembly and testing.
+
+
+
+Line Follower (2017.01 - 2017.02)
+
+* Designed a toy car that follows line automatically.
+
+* Responsible for mechanical design and assembly.
+
+
+
+CAD Piston (2016.10 - 2016.12)
+
+* Modeled an industrial piston with Siemens NX.
+
+# Research
+Statistical Analysis on Obesity in USA using R (2019.10 - 2019.12)
+
+* Sorted original data and generated various statistical plots to analyze any single variables.
+
+* Applied regression model and multivariate models to all available variables.
+
+
+
+Deblooming CT Images (2019.03 - 2019.07)
+
+* Analyzed coronary artery calcification in CT images and methods to debloom using convolutional neural networks.
+
+* Responsible for summarizing research papers and compose a report by the end of the research program.
+
+
+Analyzing Statistical Methods in Biomedical Fields (2019.01 - 2019.05)
+
+* Summarized statistical methods from 30 journal articles in BME fields.
+
+* Analyzed any drawbacks and possible improvements and presented the results to the audience.
+
+# Internship
+Thermo Fisher Scientific (China) Co., Ltd - Data Analyst (2019.07 - 2019.08)
+
+* Organized and analyzed data using Excel
+
+* Helped the team call for inquiry
+
+
+
+MacroStats (China) Clinical Research Co., Ltd - Statistical Assistant (2019.05 - 2019.06)
+
+* Organized clinical data using Excel and SAS
+
+* Translated Clinical Trial Protocol and Statistical Analysis Report (from English to Chinese)
+
+
+
+Shanghai Ninth People’s Hospital
+
+* Shadowed doctors on their rounds (2017.06 - 2017.07)
+
+* Helped patients register on auto registration machines (2016.07 - 2016.08)
+
+# Computer Skills
+Excel, Matlab, R, CAD, Minitab, SAS
